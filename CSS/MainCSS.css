@@ -1,0 +1,136 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: radial-gradient(circle, rgb(94, 167, 74), green);
+}
+/* Navegador */
+nav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background: rgb(17, 32, 25);
+    z-index: 1;
+}
+nav ul {
+    list-style-type: none;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+/* Página Abertura */
+#top {
+    height: 100%;
+    position: relative;
+    color: white;
+}
+#top img {
+    width: 10%;
+}
+h1 {
+    padding-top: 25%;
+    align-items: center;
+    font-size: 4rem;
+}
+/* Galeria */
+#gal {
+    position: relative;
+    height: 100%;
+    justify-content: space-around;
+    padding-top: 25%;
+}
+#gal img {
+    width: 20%;
+    border-radius: 50%;
+    padding: 10px;
+}
+/* Fomulário */
+#form {
+    height: 100%;
+    position: relative;
+    padding-top: 10%;
+}
+#form form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 45px auto;
+    align-items: center;
+}
+label {
+    padding: 10px;
+    font-size: 1rem;
+    width: 50%;
+}
+.divform1 input {
+    width: 40%;
+}
+.botao {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 32%;
+    height: 5%;
+}
+.divform {
+    margin: 10px;
+    width: 100%;
+}
+.divform1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+    width: 100%;
+}
+#nome {
+    background-image: url("../Imagens/usuario_icon.png");
+}
+#telefone {
+    background-image: url("../Imagens/telefone_icon.png");
+}
+#nome, #telefone {
+    background-size: 30px;
+    background-position: 10px 10px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px 15px 15px 50px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+    nav ul {
+        padding: 1%;
+    }
+    #top, #form {
+        padding-top: 5%;
+    }
+    #gal {
+        padding-top: 10%;
+    }
+    h1 {
+        padding-top: 50px;
+    }
+    form {
+        width: 80%;
+    }
+    .botao {
+        width: 200px;
+        height: 50px;
+    }
+    .divform1 {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+}
